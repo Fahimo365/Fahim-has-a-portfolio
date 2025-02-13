@@ -1,0 +1,167 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #0D1117;
+    color: #E6EDF3;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  header {
+    background: #161B22;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #58A6FF;
+  }
+  
+  /* Navigation */
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #E6EDF3;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #58A6FF;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: url('fahym.jpg') no-repeat center center/cover;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* About Section */
+  .about {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 20px;
+    background: #161B22;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  .about h2 {
+    color: #58A6FF;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Section */
+  .contact {
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .contact a {
+    text-decoration: none;
+    color: #58A6FF;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .contact a:hover {
+    color: #E6EDF3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .hero h2 {
+      font-size: 2.2rem;
+    }
+    
+    .about {
+      padding: 15px;
+    }
+  }
+/* Grid Layout */
+.image-container {
+    width: 100%;
+    height: 180px;  /* Reduced from 200px to 180px */
+    overflow: hidden;
+    border-radius: 6px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #161B22;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: left;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
